@@ -13,7 +13,7 @@ COPY uv.lock pyproject.toml server.py /app/
 RUN uv sync
 
 # 포트 노출
-EXPOSE 8000
+EXPOSE 8080
 
 # 애플리케이션 실행
 CMD ["uv", "run", "server.py"]
